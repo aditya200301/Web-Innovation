@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Web Innovations" />
+    <meta
+      name="discription"
+      content="Inventory management application of a clothes store owner."
+    />
+    <title>Web Innovations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="img">
+        <img src="images/logo2.png " alt="logo" />
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Warehouse Data</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <div class="inventory__management">
+        <div class="new__inventory">
+          <label>New Inventory</label><br />
+          <input type="text" placeholder="Enter New Inventory" class="new" />
+          <select name="productNew" id="Newproduct">
+            <option value="Saree">Saree</option>
+            <option value="T-Shirt">T-Shirt</option>
+            <option value="Jeans">Jeans</option>
+          </select>
+          <button type="submit" class="add-new">ADD New</button>
+        </div>
+
+        <div class="sold__inventory">
+          <label>Product Sold</label> <br />
+          <input type="text" placeholder="No. of products sold" class="sold" />
+          <select name="productSold" id="Soldproduct">
+            <option value="Saree">Saree</option>
+            <option value="T-Shirt">T-Shirt</option>
+            <option value="Jeans">Jeans</option>
+          </select>
+          <button type="submit" class="less-sold">Sold</button>
+        </div>
+      </div>
+
+      <div class="display__data">
+        <table>
+          <caption>
+            Warehouse Data
+          </caption>
+
+          <tr>
+            <th>Items</th>
+            <th>Inventory in Warehouse</th>
+            <th>Products Sold</th>
+            <th>Remaining Inventory</th>
+          </tr>
+
+          <tr>
+            <th>Saree</th>
+            <td class="saree-new-data">0</td>
+            <td class="saree-sold-data">0</td>
+            <td class="saree-remaining-data">0</td>
+          </tr>
+          <tr>
+            <th>T-Shirt</th>
+            <td class="tshirt-new-data">0</td>
+            <td class="tshirt-sold-data">0</td>
+            <td class="tshirt-remaining-data">0</td>
+          </tr>
+          <tr>
+            <th>Jeans</th>
+            <td class="jeans-new-data">0</td>
+            <td class="jeans-sold-data">0</td>
+            <td class="jeans-remaining-data">0</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4ce96;
+  color: #5f3f59;
+  height: 8vh;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+nav ul a,
+nav ul a:visited {
+  text-decoration: none;
+  color: #5f3f59;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
+  color: rgba(95, 63, 89, 0.7);
+  text-decoration-color: rgba(95, 63, 89, 0.7);
+  text-underline-offset: 0.5rem;
+}
+
+/* main */
+.inventory__management {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.new__inventory {
+  background-color: rgb(95, 183, 95);
+  padding: 1rem;
+}
+
+.new__inventory label {
+  font-size: 1.5rem;
+}
+
+.new__inventory input {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.new__inventory button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: rgb(95, 183, 95);
+}
+
+.sold__inventory {
+  background-color: rgb(218, 81, 81);
+  padding: 1rem;
+}
